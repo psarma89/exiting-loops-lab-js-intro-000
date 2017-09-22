@@ -1,9 +1,9 @@
 function breakOut(array, changeValue, stopValue){
-  array.forEach((element,index) => {
-    if (array[index] === stopValue){
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] === stopValue){
       break
     }else {
-      array[index] = changeValue
+      array[i] = changeValue
     }
-  })
+  }
 }
